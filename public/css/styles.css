@@ -1,71 +1,137 @@
 body{
-    font-family: 'Roboto', sans-serif;
-    margin: 0px;
+    font-family: 'Roboto';
+    background-color: #ebebeb;
 }
 
 /* -------------- HEADER -------------- */
-#header{
+#main-header{
     background-color: #EAC926;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 #logo{
-    margin-left: 30px;
-}
-
-#input-busqueda{
-    margin-left: 30px;
-    margin-top: 30px;
-    display: block;
-}
-
-#boton-busqueda{
-    margin-left: 30px;
-    padding: 0px;
+   width: 200px;
 }
 
 #texto-compra{
+    font-weight: 400;
     text-align: center;
+    font-size: 15px;
 }
 
-.enlace-nav{
-    text-decoration: none;
-    color: black;
+#input-busqueda{
+    background-color: white;
+    border: solid 1px #666;
+    width: 210px;
+    margin: 30px 0 0 0;
+    border-radius: 5px;
+    color: #9b9b9b;
+    display: inline-block;
 }
 
-.nav{
-    list-style-type: none;
-    padding: 0;
+.boton-busqueda{
+    background-color: white;
+    border: solid 1px #666;
+    border-radius: 5px;
+    margin: 1px 0 0 0;
+    padding: 1px;
 }
 
 #menu-hamburguesa{
-    margin-top: 20px;
-    font-size: 25px;
-    text-decoration: none;
-    color: white;
     background-color: #1259c3;
-    padding: 12px 18px;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 12px 0;
     border-radius: 5px;
+    text-align: center;
+    font-size: 22px;
+    margin: auto;
 }
 
-#div-nav{
-    text-align: center;
+.main-navbar{
+    display: none;
+}
+
+.main-header-top-bar{
+    padding: 20px;
+}
+
+.main-navbar ul{
+    list-style: none;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-size: 15px;
+}
+
+#home-banner{
+    width: 100%;
 }
 
 /* -------------- MAIN -------------- */
-.section-title{
+#main {
+    width: 90%;
+    margin: auto;
+}
+
+.titulo-seccion{
     font-size: 24px;
+    color: #666;
+}
+
+.articulo{
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.img-producto{
+    width: 100%;
+}
+
+.caja-articulo{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+}
+
+.icono-envio{
+    border: solid 1px #39b54a;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    color: #39b54a;
 }
 
 .precio{
+    margin: 5px 0;
     font-size: 18px;
 }
 
-.descuento, .descripcion{
+.descuento{
+    margin: 5px 0;
     font-size: 16px;
+    color: #39b54a;
+}
+
+.descripcion{
+    margin: 25px 0 0 0;
+    font-size: 16px;
+    font-weight: normal;
+    color: #666;
+    display: none;
 }
 
 /* -------------- FOOTER -------------- */
+footer{
+    background-color: white;
+}
+
 .icono-footer{
     margin-bottom: 10px;
     color: #1259c3;
@@ -74,13 +140,12 @@ body{
 
 .section-footer{
     text-align: center;
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-top: 80px;
+    margin: 0;
+    padding: 50px 50px 0 50px;
 }
 
 .h4-footer{
-    font-size: 20px;
+    font-size: 18px;
     margin: 5px;
     color: #666;
 }
@@ -88,12 +153,44 @@ body{
 .texto-footer{
     color: #666;
     margin-top: 0px;
+    font-size: 12px;
 }
 
 #copyright{
     color: #666;
     text-align: left;
-    margin-top: 60px;
-    margin-left: 20px;
-    margin-bottom: 30px;
+    padding: 30px 0 20px 20px;
+    font-size: 12px;
+    margin: 0;
+}
+
+/* -------------- MEDIA QUERIES -------------- */
+
+@media (min-width: 361px){
+    .main-navbar{
+        display: block;
+        margin-left: 20px;
+    }
+
+    #menu-hamburguesa{
+        display: none;
+    }
+    
+    .articulo{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .descripcion{
+        display: block;
+    }
+}
+
+@media (min-width: 769px){
+    .logo{
+        width: 300px;
+    }
+
+    .main-header-top-bar, .main-navbar{
+        max-width: 1200px;
+    }
 }
