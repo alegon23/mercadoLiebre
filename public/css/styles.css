@@ -1,196 +1,304 @@
-body{
-    font-family: 'Roboto';
-    background-color: #ebebeb;
+body {
+  font-family: "Roboto";
+  background-color: #ebebeb;
+  width: 100%;
 }
 
 /* -------------- HEADER -------------- */
-#main-header{
-    background-color: #EAC926;
-    padding-bottom: 20px;
+#main-header {
+  background-color: #eac926;
+  padding-bottom: 20px;
 }
 
-#logo{
-   width: 200px;
+.main-header-top-bar {
+  padding: 20px;
 }
 
-#texto-compra{
-    font-weight: 400;
-    text-align: center;
-    font-size: 15px;
+.logo-y-busqueda{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
-#input-busqueda{
-    background-color: white;
-    border: solid 1px #666;
-    width: 210px;
-    margin: 30px 0 0 0;
-    border-radius: 5px;
-    color: #9b9b9b;
-    display: inline-block;
+#logo {
+  min-width: 50%;
 }
 
-.boton-busqueda{
-    background-color: white;
-    border: solid 1px #666;
-    border-radius: 5px;
-    margin: 1px 0 0 0;
-    padding: 1px;
+#caja-busqueda{
+  margin: 0 0 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50%;
 }
 
-#menu-hamburguesa{
-    background-color: #1259c3;
-    color: white;
-    display: block;
-    max-width: 50px;
-    padding: 12px 0;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 22px;
-    margin: auto;
+#input-busqueda {
+  width: 50%;
+  margin-right: 2px;
+  /*padding: 8px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;*/
 }
 
-.main-navbar{
-    display: none;
+/*#boton-busqueda{
+  background-color: white;
+  border: none;
+  padding: 8px 0;
+  border-radius: 5px;
+  font-size: 14px;
+}*/
+
+#texto-compra {
+  font-weight: 400;
+  text-align: center;
+  font-size: 15px;
 }
 
-.main-header-top-bar{
-    padding: 20px;
+.main-navbar {
+  display: none;
 }
 
-.main-navbar ul{
-    list-style: none;
-    margin: 0 0 15px 0;
-    padding: 0;
+.main-navbar ul {
+  list-style: none;
+  margin: 0 0 15px 0;
+  padding: 0;
 }
 
 .main-navbar a {
-    text-decoration: none;
-    display: inline-block;
-    color: black;
-    font-size: 15px;
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  font-size: 15px;
 }
 
-#home-banner{
-    width: 100%;
+#menu-hamburguesa {
+  background-color: #1259c3;
+  color: white;
+  display: block;
+  max-width: 50px;
+  padding: 12px 0;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 22px;
+  margin: auto;
+}
+
+/* -------------- BANNER -------------- */
+#home-banner {
+  width: 100%;
 }
 
 /* -------------- MAIN -------------- */
 #main {
-    width: 90%;
-    margin: auto;
+  width: 90%;
+  margin: auto;
 }
 
-.titulo-seccion{
-    font-size: 24px;
-    color: #666;
+.titulo-seccion {
+  font-size: 24px;
+  color: #666;
 }
 
-.articulo{
-    margin-bottom: 10px;
-    background-color: white;
+main section div.lista-productos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.img-producto{
-    width: 100%;
+main section div.lista-productos article {
+  margin-bottom: 10px;
+  background-color: white;
+  width: 100%;
 }
 
-.caja-articulo{
-    border-top: solid 1px #ebebeb;
-    padding: 15px;
+.img-producto {
+  width: 100%;
 }
 
-.icono-envio{
-    border: solid 1px #39b54a;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    padding: 5px;
-    color: #39b54a;
+.caja-articulo {
+  border-top: solid 1px #ebebeb;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: flex-end;
 }
 
-.precio{
-    margin: 5px 0;
-    font-size: 18px;
+.icono-envio {
+  border: solid 1px #39b54a;
+  border-radius: 50%;
+  color: #39b54a;
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  background-color: #fff;
+  position: absolute;
+  right: 20px;
+  top: -15px;
 }
 
-.descuento{
-    margin: 5px 0;
-    font-size: 16px;
-    color: #39b54a;
+/*.caja-precios{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}*/
+
+.precio {
+  margin: 5px 0;
+  font-size: 18px;
+  min-width: 30%;
 }
 
-.descripcion{
-    margin: 25px 0 0 0;
-    font-size: 16px;
-    font-weight: normal;
-    color: #666;
-    display: none;
+.descuento {
+  margin: 7px 0;
+  font-size: 16px;
+  color: #39b54a;
+  min-width: 70%;
+}
+
+.descripcion {
+  margin: 25px 0 0 0;
+  font-size: 16px;
+  font-weight: normal;
+  color: #666;
+  display: none;
 }
 
 /* -------------- FOOTER -------------- */
-footer{
-    background-color: white;
+footer {
+  background-color: white;
 }
 
-.icono-footer{
-    margin-bottom: 10px;
-    color: #1259c3;
-    font-size: 2em;
+.icono-footer {
+  margin-bottom: 10px;
+  color: #1259c3;
+  font-size: 2em;
 }
 
-.section-footer{
-    text-align: center;
-    margin: 0;
-    padding: 50px 50px 0 50px;
+.section-footer {
+  text-align: center;
+  margin: 0;
+  padding: 50px 50px 0 50px;
 }
 
-.h4-footer{
-    font-size: 18px;
-    margin: 5px;
-    color: #666;
+.h4-footer {
+  font-size: 18px;
+  margin: 5px;
+  color: #666;
 }
 
-.texto-footer{
-    color: #666;
-    margin-top: 0px;
-    font-size: 12px;
+.texto-footer {
+  color: #666;
+  margin-top: 0px;
+  font-size: 12px;
 }
 
-#copyright{
-    color: #666;
-    text-align: left;
-    padding: 30px 0 20px 20px;
-    font-size: 12px;
-    margin: 0;
+#copyright {
+  color: #666;
+  text-align: left;
+  padding: 30px 0 20px 20px;
+  font-size: 12px;
+  margin: 0;
 }
 
 /* -------------- MEDIA QUERIES -------------- */
 
-@media (min-width: 361px){
-    .main-navbar{
-        display: block;
-        margin-left: 20px;
-    }
+@media (min-width: 361px) {
+  .articulo {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
 
-    #menu-hamburguesa{
-        display: none;
-    }
-    
-    .articulo{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
+  .descripcion {
+    display: block;
+  }
 
-    .descripcion{
-        display: block;
-    }
+ main section div.lista-productos article{
+    width: 45%;
+  }
+
 }
 
-@media (min-width: 769px){
-    .logo{
-        width: 300px;
-    }
+@media (min-width: 576px){
+  #menu-hamburguesa {
+    display: none;
+  }
 
-    .main-header-top-bar, .main-navbar{
-        max-width: 1200px;
-    }
+  #main-header{
+    padding-bottom: 0;
+  }
+
+  .main-navbar {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main-navbar ul{
+    display: flex;
+    align-items: center;
+  }
+
+  .main-navbar li{
+    margin: 0 5px;
+}
+
+  .main-navbar a {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .main-header-top-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-y-busqueda{
+    margin: 0;
+    justify-content: space-around;
+    width: 50%;
+  }
+
+  #input-busqueda{
+    width: 100%;
+  }
+
+  #input-busqueda, #boton-busqueda{
+    font-size: 12px;
+  }
+
+  #texto-compra {
+   width: 50%;
+   font-size: 12px;
+  }
+}
+
+@media (min-width: 769px) {
+
+  .main-header-top-bar, .main-navbar {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  main section div.lista-productos article{
+    width: 22%;
+  }
+
+  .main-navbar li{
+    margin: 0 10px;
+  }
+
+  .main-navbar a, #input-busqueda, #boton-busqueda, #texto-compra{
+    font-size: 14px;
+  }
+
+#texto-compra, #logo, #caja-busqueda {
+   width: 33%;
+  }
+
+  #texto-compra{
+    margin-left: 10px;
+  }
 }
