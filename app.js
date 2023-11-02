@@ -11,4 +11,12 @@ app.listen(PORT, () => console.log("El servidor está escuchando en el puerto " 
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/home.html');
-})
+});
+
+app.get('/register', (req, res) => {
+    res.sendFile(__dirname + '/views/register.html');
+});
+
+app.get('/login', (req, res) => {
+    res.sendFile(__dirname + '/views/login.html');
+});
