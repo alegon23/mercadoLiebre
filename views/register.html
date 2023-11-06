@@ -16,7 +16,7 @@
             <div class="logo-y-busqueda">
                 <img src="/static/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" id="logo">
 
-                <form id="caja-busqueda">
+                <form action="/" method="get" id="caja-busqueda">
                     <input type="text" id="input-busqueda" placeholder="Buscar productos, marcas">
                     <button type="submit" id="boton-busqueda"><i class="fas fa-search"></i></button>
                 </form>
@@ -62,9 +62,9 @@
             <span class="feedback-positivo">Correcto</span>-->
 
             <label class="label-registro" for="email">E-mail:</label>
-            <input type="email" name="email" placeholder="juan@mail.com" required>
-            <!--<input class="feedback-negativo-input" type="email" name="email" placeholder="juan@mail.com" required>
-            <span class="feedback-negativo">Mail invalido</span>-->
+            <!--<input type="email" name="email" placeholder="juan@mail.com" required>-->
+            <input class="feedback-negativo-input" type="email" name="email" placeholder="juan@mail.com" required>
+            <span class="feedback-negativo">Mail inválido</span>
 
             <label class="label-registro" for="fecha-nacimiento">Fecha de Nacimiento:</label>
             <input type="date" name="fecha-nacimiento" required>
@@ -115,14 +115,14 @@
             <input type="file" name="avatar" accept=".jpg, .png">
             
             <label class="label-registro" for="password">Contraseña:</label>
-            <input type="password" name="password" placeholder="********" required>
-            <!--<input class="feedback-positivo-input" type="password" name="password" placeholder="********" required>
-            <span class="feedback-positivo">Contraseña segura</span>-->
+            <!--<input type="password" name="password" placeholder="********" required>-->
+            <input class="feedback-positivo-input" type="password" name="password" placeholder="********" required>
+            <span class="feedback-positivo">Contraseña segura</span>
 
             <label class="label-registro" for="password-confirm">Repetir contraseña:</label>
-            <input type="password" name="password-confirm" placeholder="********" required>
-            <!--<input class="feedback-negativo-input" type="password" name="password-confirm" placeholder="********" required>
-            <span class="feedback-negativo">Las contraseñas no coinciden</span>-->
+            <!--<input type="password" name="password-confirm" placeholder="********" required>-->
+            <input class="feedback-negativo-input" type="password" name="password-confirm" placeholder="********" required>
+            <span class="feedback-negativo">Las contraseñas no coinciden</span>
 
             <div class="caja-botones">
                 <button class="boton-reset" type="reset">Borrar</button>
@@ -133,21 +133,23 @@
     </main>
 
     <footer>
-        <section class="section-footer">
-            <i class="fas fa-credit-card icono-footer"></i>
-            <h4 class="h4-footer">Pagá con tarjeta o en efectivo</h4>
-            <p class="texto-footer">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
-        </section>
-        <section class="section-footer">
-            <i class="fas fa-gift icono-footer"></i>
-            <h4 class="h4-footer">Envío gratis desde $ 2.500</h4>
-            <p class="texto-footer">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
-        </section>
-        <section class="section-footer">
-            <i class="fas fa-user-shield icono-footer"></i>
-            <h4 class="h4-footer">Seguridad, de principio a fin</h4>
-            <p class="texto-footer">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
-        </section>
+        <div>
+            <section class="section-footer">
+                <i class="fas fa-credit-card icono-footer"></i>
+                <h4 class="h4-footer">Pagá con tarjeta o en efectivo</h4>
+                <p class="texto-footer">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            </section>
+            <section class="section-footer">
+                <i class="fas fa-gift icono-footer"></i>
+                <h4 class="h4-footer">Envío gratis desde $ 2.500</h4>
+                <p class="texto-footer">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+            </section>
+            <section class="section-footer">
+                <i class="fas fa-user-shield icono-footer"></i>
+                <h4 class="h4-footer">Seguridad, de principio a fin</h4>
+                <p class="texto-footer">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+            </section>
+        </div>
         <section>
             <p id="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
         </section>
