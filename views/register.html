@@ -51,30 +51,20 @@
             <h2>Creá tu cuenta</h2>
 
             <label class="label-registro" for="nombre-apellido">Nombre y Apellido:</label>
-
             <input type="text" name="nombre-apellido" placeholder="Juan Perez" required>
-            <!--<input class="feedback-negativo-input" type="text" name="nombre-apellido" placeholder="Juan Perez" required>
-            <span class="feedback-negativo">El nombre es muy corto</span>-->
 
             <label class="label-registro" for="usuario">Nombre de usuario:</label>
             <input type="text" name="usuario" placeholder="Juan123" required>
-            <!--<input class="feedback-positivo-input" type="text" name="usuario" placeholder="Juan123" required>
-            <span class="feedback-positivo">Correcto</span>-->
 
             <label class="label-registro" for="email">E-mail:</label>
-            <!--<input type="email" name="email" placeholder="juan@mail.com" required>-->
             <input class="feedback-negativo-input" type="email" name="email" placeholder="juan@mail.com" required>
-            <span class="feedback-negativo">Mail inválido</span>
+            <span class="feedback-negativo">Ingrese un mail válido</span>
 
             <label class="label-registro" for="fecha-nacimiento">Fecha de Nacimiento:</label>
             <input type="date" name="fecha-nacimiento" required>
-            <!--<input class="feedback-positivo-input" type="date" name="fecha-nacimiento" required>
-            <span class="feedback-positivo">Correcto</span>-->
 
             <label class="label-registro" for="domicilio">Domicilio</label>
             <input type="text" name="domicilio" placeholder="Calle Falsa 123" required>
-            <!--<input class="feedback-positivo-input" type="text" name="domicilio" placeholder="Calle Falsa 123" required>
-            <span class="feedback-positivo">Correcto</span>-->
 
             <h4>Perfil del usuario</h4>
             <div class="perfil-usuario">
@@ -84,7 +74,6 @@
                 <input type="radio" name="perfil" value="vender">
                 <label for="vender">Vender</label>
             </div>
-            <!--<span class="feedback-negativo">Debe elegir una opción</span>-->
 
             <h4>Categorías de interés</h4>
             <div class="categorias-interes">
@@ -109,19 +98,16 @@
                     <label for="vidaSana">Vida Sana</label>
                 </div>
             </div>
-            <!--<span class="feedback-negativo">Debe elegir al menos una opción</span>-->
 
             <h4>Elegí tu foto de usuario</h4>
             <input type="file" name="avatar" accept=".jpg, .png">
             
             <label class="label-registro" for="password">Contraseña:</label>
-            <!--<input type="password" name="password" placeholder="********" required>-->
-            <input class="feedback-positivo-input" type="password" name="password" placeholder="********" required>
+            <input class="feedback-positivo-input" type="password" name="password" placeholder="••••••••••" required>
             <span class="feedback-positivo">Contraseña segura</span>
 
             <label class="label-registro" for="password-confirm">Repetir contraseña:</label>
-            <!--<input type="password" name="password-confirm" placeholder="********" required>-->
-            <input class="feedback-negativo-input" type="password" name="password-confirm" placeholder="********" required>
+            <input class="feedback-negativo-input" type="password" name="password-confirm" placeholder="••••••••••" required>
             <span class="feedback-negativo">Las contraseñas no coinciden</span>
 
             <div class="caja-botones">

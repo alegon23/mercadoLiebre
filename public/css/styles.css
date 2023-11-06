@@ -44,6 +44,10 @@ body {
 }
 
 #input-busqueda:focus{
+  box-shadow: 20px 0px 20px rgba(139, 139, 139, 0.3);
+}
+
+#input-busqueda:focus{
   outline: white;
 }
 
@@ -79,6 +83,10 @@ body {
   display: inline-block;
   color: black;
   font-size: 15px;
+}
+
+.main-navbar a:hover{
+  color: #414141;
 }
 
 #menu-hamburguesa {
@@ -151,7 +159,6 @@ main section div.lista-productos article:hover{
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  /*align-items: flex-end;*/
   min-height: 65px;
 }
 
@@ -192,6 +199,7 @@ main section div.lista-productos article:hover{
 
 /* -------------- FOOTER -------------- */
 footer {
+  margin-top: 20px;
   background-color: white;
 }
 
@@ -337,7 +345,6 @@ footer {
   }
 
   footer div{
-    margin-top: 120px;
     padding: 25px 0;
     display: flex;
     justify-content: space-around;
@@ -346,7 +353,7 @@ footer {
 }
 
 @media (min-width: 992px) {
-  .main-header-top-bar, .main-navbar, main section, footer div, footer section {
+  .main-header-top-bar, .main-navbar, #main section, footer div, footer section {
     max-width: 1200px;
     margin: auto;
   }
@@ -355,11 +362,11 @@ footer {
     font-size: 15px;
   }
 
-  main section {
+  #main section {
     min-height: 490px;
   }
 
-  main section div.lista-productos article{
+  #main section div.lista-productos article{
     min-height: 358px;
     max-height: 402px;
   }
