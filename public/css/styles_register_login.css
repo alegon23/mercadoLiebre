@@ -107,8 +107,28 @@
     font-size: 11px;
     margin: 5px 0 0 5px;
 }
+
+/* PARA FEEDBACK NEGATIVO */
+/*input[type="email"]:invalid, input[type="password"]:invalid{
+  color: rgba(255, 0, 0, 0.8);
+}
+
+.feedback-negativo{
+  display: none;
+}
+
+input[type="email"]:invalid + .feedback-negativo, input[type="password"]:invalid + .feedback-negativo{
+  display: inline;
+  color: rgba(255, 0, 0, 0.8);
+  font-size: 11px;
+  margin: 5px 0 0 5px;
+
+  #form-registro input[type="email"].feedback-negativo-input{
+    border: 1px solid rgba(255, 0, 0, 0.5);
+  }
+}*/
   
-  .feedback-positivo{
+.feedback-positivo{
     display: block;
     color: rgba(0, 120, 0, 0.8);
     font-size: 11px;
